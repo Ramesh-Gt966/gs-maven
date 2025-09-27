@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build & Test') {
             steps {
-                bat 'mvn clean test'
+                dir('gs-maven') { // 👈 change this to match your actual project folder
+                    bat 'mvn clean test'
+                }
             }
         }
     }
