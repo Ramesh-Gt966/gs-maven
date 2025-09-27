@@ -11,7 +11,7 @@ pipeline {
 	}
 
 	stages {
-		stage("test: baseline (jdk8)") {
+		stage("test: baselin (jdk8)") {
 			agent {
 				docker {
 					image 'adoptopenjdk/openjdk8:latest'
